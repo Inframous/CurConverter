@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <h1>Currency Converter</h1>
+        <form action="" method="post">
+            <input type="text" name="amount">
+            <select name="input_currency">
+                {% for cur in cur_list %}
+
+                    <option value="{{ cur }}">{{ cur }}</option>
+
+                {% endfor %}
+            </select>
+            <select name="output_currency">
+                {% for cur in cur_list %}
+
+                    <option value="{{ cur }}">{{ cur }}</option>
+
+                {% endfor %}
+            </select>
+            <input type="submit" value="Convert">
+        </form>
+
+
+        <hr>
+        <div>
+            {% if results %}
+                <p>{{ user_curs[0] }} {{ user_curs[1] }} is {{ results }} {{ user_curs[2] }}</p>
+
+            {% endif %}
+        </div>
+</body>
+</html>
