@@ -1,0 +1,9 @@
+version: '3'
+services:
+  cur_converter:
+    build: .
+    image: "dockerized-converter:1.0"
+    container_name: dockerized_converter
+    ports:
+      - "80:5000"
+
