@@ -4,7 +4,7 @@ This project will is a simple currency converter based on a free API.
 
 
 ### Requirements:
-A host running Docker, Docker Compose.
+A host running Docker, Docker Compose and Git.
 
 ### Installations:
 
